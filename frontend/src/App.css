@@ -1,0 +1,78 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+.box {
+  position: absolute;
+  height: 5vw;
+  width:  100vw;
+  background-color: #333;
+  
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  width: 28vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav div {
+  padding: 10px;
+}
+
+.first {
+  display: flex;
+  position: sticky;
+  margin-left: 1vw;
+}
+
+nav .logo {
+  width: 50px;
+  height: 50px;
+  margin-top: 1vw;
+  margin-right: 1vw;
+  background-image: url('./assets/44.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+nav .goals {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  padding: 1vw;
+  margin: 0;
+}
+
+nav ul li {
+  padding: 10px ;
+  margin-bottom: 2.5vw;
+  border-radius: 10px;
+}
+
+nav ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li:hover {
+  background-color: #555;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: rgb(158, 9, 78);
+  
+}

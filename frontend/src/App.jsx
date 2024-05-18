@@ -10,26 +10,26 @@ function App() {
   const router = createBrowserRouter ([
     {
       path: "/",
-      element: <Home/>
+      element:  <> <Navbar/> <Home/> </>
     },
     {
       path: "/favorites",
-      element: <Favorites/>
+      element:  <> <Navbar/> <Favorites/> </>
     },
     {
       path: "/inProgress",
-      element: <InProgress/>
+      element:  <> <Navbar/> <InProgress/> </>
     },
     {
       path: "/complete",
-      element: <Complete/>
+      element:  <> <Navbar/> <Complete/>  </>
     },
     
   ])
 
   return (
     <>
-      <Navbar/>
+      
       <RouterProvider router={router}/>
     </>
   )

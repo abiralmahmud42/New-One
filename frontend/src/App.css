@@ -1,13 +1,18 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
 body {
-  margin: 0;
   padding: 0;
+  margin: 0;
   overflow-y: hidden;
 }
+
+.navbar {
+   position: absolute;
+}
+
 .box {
   position: absolute;
-  height: 5vw;
+  height: 4vw;
   width:  100vw;
   background-color: #333;
   
@@ -45,34 +50,137 @@ nav .logo {
 nav .goals {
   font-size: 30px;
   font-weight: 400;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
 
 nav ul {
+  text-decoration: none;
   list-style: none;
   padding: 1vw;
   margin: 0;
+  
 }
 
+
+
 nav ul li {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
   padding: 10px ;
   margin-bottom: 2.5vw;
   border-radius: 10px;
 }
 
-nav ul li a {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  text-decoration: none;
-  color: white;
-}
-
 nav ul li:hover {
   background-color: #555;
-}
-
-nav ul li a:hover {
-  text-decoration: none;
   color: rgb(158, 9, 78);
   
 }
+
+.hhh{
+  text-decoration: none;
+}
+
+.container {
+  height: 100vh;
+  background-color: black;
+  
+}
+
+.center-button {
+  margin-top: 7vw;
+  margin-left: 87vw;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #22477e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.center-button:hover {
+  opacity: 0.8;
+}
+
+.fav {
+  
+}
+
+.favorite-goals {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',  Verdana, sans-serif;
+  position: absolute;
+  color: white;
+  top: 30%;
+  left: 35%;
+  
+}
+
+.popup {
+  position: fixed;
+  margin-top: 6vw;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(45, 32, 32, 0.8); 
+  width: 80%;
+  height: 30vw;
+  max-width: 400px; 
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1001;
+  backdrop-filter: blur(15px);
+  pointer-events: auto;
+  
+}
+
+
+.popup-content {
+  padding: 2vw;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',  Verdana, sans-serif;
+
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 3vw;
+}
+
+.popup.show {
+  display: block; 
+  backface-visibility: hidden;
+}
+
+.zzz{
+  height: 2vw;
+  width: 30vw;
+  border-color: white;
+  border-radius: 5px;
+  background-color: rgba(45, 32, 32, 0.8);
+  padding: 6px;
+}
+
+.nnn {
+  height: 10vw;
+  width: 30vw;
+  border-color: white;
+  border-radius: 5px;
+  background-color: rgba(45, 32, 32, 0.8);
+  padding: 6px;
+}
+
+
+
+

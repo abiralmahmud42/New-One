@@ -6,6 +6,7 @@ const Navbar = () => {
  
   return (
      <>
+     <div className='navbar'>
      <div className='box'>
       </div>
       <nav>
@@ -14,14 +15,16 @@ const Navbar = () => {
             <div className="logo"></div>
             <p className="goals">Goals</p>
         </div>     
-        <ul>
-          <li><a href="/"> <i className="fas fa-home"></i> Home</a></li>
-          <li><a href="/favoritex"> <i className="fas fa-heart"></i> Favorite</a></li>
-          <li><a href="/inProgress"> <i className="fas fa-tasks"> </i> In Progress</a></li>
-          <li><a href="/complete"> <i className="fas fa-check-circle"></i> Complete</a></li>
+        <ul className='hhh'>
+          <Link to="/" className='hhh'><li> <i className="fas fa-home"></i> Home </li></Link>
+          <Link to="/favorites"className='hhh'><li> <i className="fas fa-heart"></i> Favorites </li></Link>
+          <Link to="/inProgress" className='hhh'><li> <i className="fas fa-tasks"></i> In Progress </li></Link>
+          <Link to="/complete" className='hhh'><li> <i className="fas fa-check-circle"></i> Complete </li></Link>
         </ul>
       </div>
-    </nav>
+      </nav>
+     </div>
+     
     </>
     
   );

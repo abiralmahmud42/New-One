@@ -8,7 +8,7 @@ const favorites = () => {
   return (
     <>
       <div className="container">
-      <button className="center-button">  <FontAwesomeIcon icon={faPlus} />  Click Me</button>
+      {/* <button className="center-button">  <FontAwesomeIcon icon={faPlus} />  Click Me</button> */}
      </div>
      <div className="favorite-goals">
       <h1>Favorite Goals</h1>

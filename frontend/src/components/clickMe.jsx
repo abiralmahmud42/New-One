@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faHeart, faCheck } from '@fortawesome/free-solid-svg-icons';
 
 const ClickMe = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -84,15 +84,26 @@ const ClickMe = () => {
         </div>
       )}
 
-      <div className='goal-box'>
-      <div className="goals-list">
-        {goals.map((goal, index) => (
-          <div key={index} className="goal-item">
-            <h3>{goal.title}</h3>
-            <p>{goal.description}</p>
-          </div>
-        ))}
-      </div>
+      <div className="goal-box">
+        <div className="goals-list">
+          {goals.map((goal, index) => (
+            <div key={index} className="goal-item">
+              <h3>{goal.title}</h3>
+              <p>{goal.description}</p>
+              <div className="goal-icons">
+                <div className='g-icon'>
+                    <div className='fav-icon'>
+                    <FontAwesomeIcon icon={faHeart} className="icon favorite-icon"  /> Favorite
+                    </div>
+                    <div className='com-icon'>
+                     <FontAwesomeIcon icon={faCheck} className="icon complete-icon"  /> Complete
+                   </div>
+                </div>
+                
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );

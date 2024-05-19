@@ -3,11 +3,11 @@
 body {
   padding: 0;
   margin: 0;
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 
 .navbar {
-   position: absolute;
+   position: fixed;
 }
 
 .box {
@@ -15,8 +15,8 @@ body {
   height: 4vw;
   width:  100vw;
   background-color: #333;
-  
 }
+
 
 nav {
   background-color: #333;
@@ -50,7 +50,7 @@ nav .logo {
 nav .goals {
   font-size: 30px;
   font-weight: 400;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',  Verdana, sans-serif;
 }
 
 nav ul {
@@ -60,8 +60,6 @@ nav ul {
   margin: 0;
   
 }
-
-
 
 nav ul li {
   text-decoration: none;
@@ -84,14 +82,14 @@ nav ul li:hover {
 }
 
 .container {
-  height: 100vh;
+  height: 100vw;
   background-color: black;
   
 }
 
 .center-button {
-  margin-top: 7vw;
-  margin-left: 87vw;
+  margin-top: 6.5vw;
+  margin-left: 85vw;
   padding: 10px 20px;
   font-size: 20px;
   background-color: #22477e;
@@ -99,14 +97,11 @@ nav ul li:hover {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  position: fixed;
 }
 
 .center-button:hover {
   opacity: 0.8;
-}
-
-.fav {
-  
 }
 
 .favorite-goals {
@@ -174,17 +169,14 @@ nav ul li:hover {
 }
 
 .nnn {
-  height: 6.5vw;
+  height: 7vw;
   width: 30vw;
   border-color: white;
   border-radius: 5px;
   background-color: rgba(45, 32, 32, 0.8);
   padding: 4px;
   color: white;
-}
-
-.center-button {
-  position: absolute;
+  margin-bottom: 2vw;
 }
 
 .popup-overlay{
@@ -193,7 +185,7 @@ nav ul li:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  background-color: rgba(0, 0, 0, 0.8); 
   z-index: 999;
 }
 
@@ -213,12 +205,9 @@ nav ul li:hover {
 }
 
 
-
 .form-group {
   margin-bottom: 15px;
 }
-
-
 
 .add-button:hover {
   opacity: 0.8;
@@ -230,7 +219,7 @@ nav ul li:hover {
   top: 50%;
   left: 35%;
   color: white;
-  width: 60vw; /* Adjusted width to fit the container */
+  width: 60vw; 
 }
 
 .goal-item {
@@ -239,6 +228,8 @@ nav ul li:hover {
   border-radius: 5px;
   margin-bottom: 10px;
   color: white;
+  max-height: 10vw;
+
 }
 
 .goal-item h3 {
@@ -246,9 +237,25 @@ nav ul li:hover {
 }
 
 .goal-item p {
-  margin: 0;
-  
+  margin-top: 10px;
 }
 
+.g-icon {
+  display: flex;
+}
 
+.fav-icon{
+ margin-right: 2vw;
+ font-weight: 400;
+}
+
+.fav-icon:hover{
+  color:  rgb(158, 9, 78);
+  
+
+}
+
+.com-icon:hover {
+  color: rgb(40, 130, 4);
+}
 

@@ -8,7 +8,7 @@ const goals = () => {
         const newGoal = { title, description };
         setGoals([...goals, newGoal]);
         handleClosePopup();
-        
+        // edit this goal
       };
   return (
     <>

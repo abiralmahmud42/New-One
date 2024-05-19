@@ -3,7 +3,10 @@
 body {
   padding: 0;
   margin: 0;
-  overflow-y: scroll;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: black; /* Set the background color to black */
+
 }
 
 .navbar {
@@ -82,8 +85,8 @@ nav ul li:hover {
 }
 
 .container {
-  height: 100vw;
-  background-color: black;
+  height: 50vw;
+  overflow-y: auto;
   
 }
 

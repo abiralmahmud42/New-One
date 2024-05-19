@@ -72,7 +72,7 @@ const ClickMe = () => {
                       required
                     ></textarea>
                   </div>
-                  <div>
+                  <div className='nai'>
                     <button className="add-button" type="submit">
                       Add New Goal
                     </button>

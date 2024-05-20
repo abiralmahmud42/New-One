@@ -5,7 +5,7 @@ body {
   margin: 0;
   height: 100vh;
   overflow-y: auto;
-  background-color: black; /* Set the background color to black */
+  background-color: black; 
 
 }
 
@@ -77,17 +77,22 @@ nav ul li {
 nav ul li:hover {
   background-color: #555;
   color: rgb(158, 9, 78);
+  transition: background-color 0.5s, color 0.5s;
   
+}
+
+ul.hhh .active li {
+  color:  rgb(158, 9, 78); 
 }
 
 .hhh{
   text-decoration: none;
+  
 }
 
 .container {
   height: 50vw;
   overflow-y: auto;
-  
 }
 
 .center-button {
@@ -115,7 +120,6 @@ nav ul li:hover {
   color: white;
   top: 30%;
   left: 35%;
-  
 }
 
 .popup {

@@ -144,7 +144,7 @@ const ClickMe = () => {
                   </div>
                 </div>
               </div>
-              
+              {/* favorite and complete are not completed */}
               <p>{goal.description}</p>
               <div className="goal-icons">
                 <div className="g-icon">

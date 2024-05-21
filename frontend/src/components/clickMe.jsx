@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faHeart, faCheck, faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
@@ -144,7 +143,7 @@ const ClickMe = () => {
                   </div>
                 </div>
               </div>
-              {/* favorite and complete are not completed */}
+             
               <p>{goal.description}</p>
               <div className="goal-icons">
                 <div className="g-icon">
